@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fraud Detection AI - Project Portal</title>
+    <style>
+        :root {
+            --primary: #00d26a;
+            --danger: #ff4b4b;
+            --dark: #0e1117;
+            --card-bg: #1e2127;
+            --text: #fafafa;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--dark);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            padding: 4rem 0;
+            border-bottom: 1px solid #333;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, var(--primary), #00b359);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            color: #aaa;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            padding: 2rem;
+            border-radius: 15px;
+            border: 1px solid #333;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+        }
+
+        .card h2 {
+            color: var(--primary);
+            margin-top: 0;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: #000;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-top: 2rem;
+            transition: all 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #00b359;
+            box-shadow: 0 0 20px rgba(0, 210, 106, 0.4);
+            transform: scale(1.05);
+        }
+
+        .instruction-step {
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 1rem;
+            margin: 0.5rem 0;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary);
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 0;
+            margin-top: 4rem;
+            color: #666;
+            border-top: 1px solid #333;
+        }
+
+        code {
+            background-color: #000;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-family: monospace;
+            color: var(--primary);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>🛡️ Fraud Detection AI</h1>
+            <p class="subtitle">Advanced Credit Card Fraud Detection System</p>
+            <a href="http://localhost:8502" target="_blank" class="btn">🚀 Open Live Dashboard</a>
+        </header>
+
+        <div class="grid">
+            <div class="card">
+                <h2>How to Run</h2>
+                <p>To start the application without the AI agent:</p>
+                <div class="instruction-step">
+                    <strong>Option 1 (Easiest):</strong><br>
+                    Double-click the <code>run_app.bat</code> file in this folder.
+                </div>
+                <div class="instruction-step">
+                    <strong>Option 2 (Manual):</strong><br>
+                    Open terminal and run:<br>
+                    <code>streamlit run app.py</code>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>System Architecture</h2>
+                <p><strong>Algorithm:</strong> K-Nearest Neighbors (KNN)</p>
+                <p><strong>Data Privacy:</strong> Uses PCA (Principal Component Analysis) to anonymize sensitive user
+                    data into numerical vectors (V1-V28).</p>
+                <p><strong>Tech Stack:</strong> Python, Streamlit, Scikit-Learn, Pandas.</p>
+            </div>
+
+            <div class="card">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Real-time Transaction Analysis</li>
+                    <li>Network Integrity Scoring</li>
+                    <li>Identity Verification Scoring</li>
+                    <li>Location Consistency Checks</li>
+                    <li>Interactive Data Visualization</li>
+                </ul>
+            </div>
+        </div>
+
+        <div style="margin-top: 4rem;">
+            <h2>About the Project</h2>
+            <p>
+                Fraud Detection AI is a demonstration of modern machine learning techniques applied to financial
+                security.
+                By analyzing patterns in historical transaction data, the system learns to distinguish between
+                legitimate
+                purchases and fraudulent activity based on mathematical anomalies.
+            </p>
+            <p>
+                The application uses a <strong>Cybersecurity Dashboard</strong> interface to provide clear, actionable
+                insights
+                for fraud analysts.
+            </p>
+        </div>
+
+        <footer>
+            <p>Generated by Antigravity | Powered by Streamlit & Scikit-Learn</p>
+        </footer>
+    </div>
+</body>
+
+</html>
