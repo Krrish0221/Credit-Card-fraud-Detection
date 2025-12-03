@@ -4,7 +4,7 @@
 ![Streamlit](https://img.shields.io/badge/Streamlit-App-red)
 ![Scikit-Learn](https://img.shields.io/badge/ML-Scikit--Learn-orange)
 
-### 🔴 [Live Demo: Click Here to Test the App](INSERT_YOUR_HUGGING_FACE_LINK_HERE)
+### 🔴 [Live Demo: Click Here to Test the App](INSERT_YOUR_HUGGING_FACE_LINK_HERE](https://huggingface.co/spaces/Krrish0221/CreditCard)
 
 ## 📖 Project Overview
 This project is a **Machine Learning-powered Web Application** designed to detect fraudulent credit card transactions. It utilizes a **K-Nearest Neighbors (KNN)** algorithm trained on a dataset of transaction records to classify activities as either "Safe" or "Fraudulent" in real-time.
@@ -49,3 +49,4 @@ If you want to run this project on your own machine:
 ## 👨‍💻 Author
 **Krish Prajapati**
 *CSE - AI & ML Student*
+
